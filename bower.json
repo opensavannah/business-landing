@@ -1,0 +1,33 @@
+{
+  "name": "business-landing",
+  "description": "A web application that enables users to find the best location to start their business.",
+  "main": "server.js",
+  "authors": [
+    "Jonathan Hofler",
+    "Amber Hofler",
+    "Quentin Headen",
+    "Viankor Headen"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "business",
+    "angular",
+    "nodejs",
+    "bootstrap",
+    "jquery"
+  ],
+  "homepage": "https://github.com/team-photon/business-landing",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.4.7",
+    "angular": "angularjs#~1.4.7",
+    "bootstrap": "~3.3.5"
+  }
+}
