@@ -56,7 +56,7 @@ body {
     margin-left: 20%;
     margin-right: 20%;
     background-color: white;
-    opacity: 0.7;
+    opacity: 1.0;
     border-radius: 30px;
     height: auto;
 }
@@ -83,6 +83,11 @@ body {
    opacity: 1; 
 
  }
+
+.heatMap {
+    height: 600px;
+    opacity: 1.0;
+}
 
 
 

@@ -4,7 +4,9 @@
   "description": "A web application that enables users to find the best location to start their business.",
   "main": "server.js",
   "dependencies": {
+    "cors": "^2.7.1",
     "express": "^4.13.3",
+    "mongodb": "^2.0.46",
     "querystring": "^0.2.0",
     "request": "^2.65.0",
     "underscore": "^1.8.3"

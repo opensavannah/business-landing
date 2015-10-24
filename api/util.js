@@ -2,9 +2,12 @@
 
 var querystring = require('querystring');
 var request = require('request');
+var mongodb = require('mongodb');
+var _ = require('underscore');
 
 const CENSUS_API_TOKEN = '900de9519a11ff7d00d9deff7e9975e34d173a11';
 const ZIP_CODE_API_TOKEN = 'VIL57psM9eRp7qzkc6N9oKKztPoHFP5AxRFEh7rqmjPtKpOWvB6UmQtPFSwlHCVf';
+const MONGODB_URL = 'mongodb://localhost:27017/businesslanding';
 
 module.exports = {
     /**
@@ -40,4 +43,30 @@ module.exports = {
 
         return dataPromise;
     },
+    /**
+     * Return a list of coordinates for every US zip code.
+     */
+    getAllZipCoordinates: function() {
+        let dataPromise = new Promise(function(resolve, reject) {
+            mongodb.MongoClient.connect(MONGODB_URL, function(err, db) {
+                let collection = db.collection('zipCoordinates');
+                collection.find({}).toArray(function(err, docs) {
+                    db.close();
+                    
+                    let zipCoords = _.reduce(docs, function(memo, doc) {
+                        memo[doc.zip] = {
+                            lat: doc.lat,
+                            lng: doc.lng
+                        };
+                        return memo;
+                    }, {});
+                    
+                    resolve(zipCoords);
+                });      
+            });
+        });
+        
+        return dataPromise;
+    },
+    
 };

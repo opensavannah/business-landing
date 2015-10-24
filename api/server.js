@@ -1,8 +1,10 @@
 "use strict";
 
 var express = require('express');
+var cors = require('cors');
 var app = express();
 
+app.use(cors());
 app.get('/api/demographics', require('./controllers/demographics-controller.js'));
 app.get('/api/heat-data', require('./controllers/heat-data-controller.js'));
 
