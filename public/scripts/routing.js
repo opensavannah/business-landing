@@ -9,5 +9,10 @@ app.config(['$routeProvider', '$locationProvider',
     }).when('/map', {
         templateUrl: 'templates/map.html',
         controller: 'MapController'
+    }).when('/demographicSelection', {
+        templateUrl: 'templates/demographics-form.html',
+        controller: 'DemographicsSelectionController'
+    }).when('/getting-started', {
+        templateUrl: 'templates/getting-started.html',
     });
 }]);

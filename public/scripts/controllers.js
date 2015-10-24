@@ -2,18 +2,6 @@ var API_URL = 'http://localhost:3001/api'
 
 var app = angular.module('business-landing', ['ngRoute']);
 
-app.config(['$routeProvider', '$locationProvider',
-  function($routeProvider, $locationProvider) {
-    $routeProvider.when('/', {
-        templateUrl: 'templates/greeting.html'
-    }).when('/business-choice', {
-        templateUrl: 'templates/business-choice.html'
-    }).when('/map', {
-        templateUrl: 'templates/map.html',
-        controller: 'MapController'
-    });
-}]);
-
 app.controller('MapController', ['$scope', '$http', function($scope, $http) {
     var map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: 36.9667, lng: -76.3667},
@@ -37,6 +25,9 @@ app.controller('MapController', ['$scope', '$http', function($scope, $http) {
         }
         initializeHeatMap($http, map, data); 
     });
+}]);
+
+app.controller('DemographicsSelectionController', ['$scope', '$http', function($scope, $http) {
 }]);
 
 

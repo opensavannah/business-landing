@@ -1,6 +1,4 @@
 
-/* This is background of my web site */
-
 body {
   background: url('topview.jpg') no-repeat 50% 50% fixed; 
   background-size: cover;
@@ -10,20 +8,46 @@ body {
 }
 
 
-  /* This is paragraph formatting in Jumbotron div*/
+
 #p1 {
    font-family: arial;
+   font-weight: bold;
    font-size: 14pt;
    color: black;
-   text-align: center;
-   margin-left: 25px;
-   margin-right: 25px;
-   margin-top: 50px;
+   text-align: left;
+   margin-top: 20px;
+   margin-right: 35px;
+   margin-left: 30px;
    height: auto;
    width: auto;
  }
 
-  /* This is bootstrap navigation bar CSS code */
+
+#p2 {
+   font-family: arial;
+   font-weight: bold;
+   font-size: 10pt;
+   color: black;
+   text-align: left;
+   margin-top: 20px;
+   margin-right: 60px;
+   margin-left: 30px;
+   height: auto;
+   width: auto;
+ }
+
+ p.pheading {
+   font-family: arial;
+   font-weight: bold;
+   font-size: 12pt;
+   color: black;
+   text-align: left;
+   margin-top: 20px;
+   margin-right: 35px;
+   height: auto;
+   width: auto;
+ }
+
 
 .navbar-inverse { background-color: #222222}
 .navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #}
@@ -46,19 +70,25 @@ body {
 .navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #ffffff}
 
-/* This is Jumbotron heading 1 code */
 
 .jumbotron {
- 
-    text-align: center;
+    text-align: left;
     color: black;
     margin-top: 9%;
     margin-left: 20%;
     margin-right: 20%;
     background-color: white;
-    opacity: 0.8;
+    opacity: 0.9;
     border-radius: 30px;
     height: auto;
+    
+}
+
+
+
+.about {
+    margin-top: 1px;
+    margin-left: 4%;
 }
 
 
@@ -72,18 +102,11 @@ body {
   margin-top: 4.8px;
 }
 
-.home {
-    margin-top: 1px;
+.dropdown {
+    
+   margin-left: 0px;
+    
 }
-
-.btn {
-   
-   margin-top: auto;
-   background: blue;
-   opacity: 1; 
-
- }
-
 
 
 .dropdown-submenu {
@@ -108,8 +131,8 @@ body {
     display: block;
     content: " ";
     float: right;
-    width: 0;
-    height: 0;
+    width: auto;
+    height: auto;
     border-color: transparent;
     border-style: solid;
     border-width: 5px 0 5px 5px;
@@ -134,11 +157,14 @@ body {
     border-radius: 6px 0 6px 6px;
 }
 
-.heatMap {
-    width: 800px;
-    height: 600px;
-    margin: auto;
-}
+
+
+
+
+
+
+
+
 
 
 
