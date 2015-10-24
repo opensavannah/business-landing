@@ -4,7 +4,7 @@ var app = angular.module('business-landing', ['ngRoute']);
 
 app.controller('MapController', ['$scope', '$http', function($scope, $http) {
     var map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 36.9667, lng: -76.3667},
+      center: {lat: 36.9167, lng: -76.2000},
       zoom: 8
     });
     
