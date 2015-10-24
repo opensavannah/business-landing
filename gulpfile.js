@@ -5,11 +5,11 @@ var mongodb = require('mongodb');
 var fs = require('fs');
 
 gulp.task('runSite', function() {
-    nodemon({script: 'api/server.js', ext: 'js', watch: ['api']});
+    nodemon({script: 'server.js'});
 });
 
 gulp.task('runApi', function() {
-    nodemon({script: 'facade/server.js', ext: 'js', watch: ['facade']});i    
+    nodemon({script: 'api/server.js', ext: 'js', watch: ['api']});    
 });
 
 gulp.task('loadZipData', function() {
@@ -42,10 +42,10 @@ gulp.task('loadZipData', function() {
 
             collection.deleteMany({}, function(err, results) {
                 collection.insertMany(zipCoordinates, function(err, result) {
-                if (err !== null) {
-                    console.log(err);
-                }
-                db.close();
+                    if (err !== null) {
+                        console.log(err);
+                    }
+                    db.close();
                 });
             });
         });
