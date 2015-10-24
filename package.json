@@ -6,6 +6,8 @@
   "dependencies": {
     "cors": "^2.7.1",
     "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-nodemon": "^2.0.4",
     "mongodb": "^2.0.46",
     "querystring": "^0.2.0",
     "request": "^2.65.0",
