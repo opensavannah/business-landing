@@ -7,6 +7,7 @@ var app = express();
 app.use(cors());
 app.get('/api/demographics', require('./controllers/demographics-controller.js'));
 app.get('/api/heat-data', require('./controllers/heat-data-controller.js'));
+app.get('/api/score', require('./controllers/scoring-controller.js'));
 
 
 var server = app.listen(3001, function () {
