@@ -1,87 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="Business Landing Site for Hackathon" content="">
-        <meta name="Jonathan Hofler" content="">
-        <title>Business Landing</title>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="bower_components/angular/angular.js"></script>
-        <script src="bower_components/angular-route/angular-route.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTxRCsiV_T2JXVWBuQs6HEpiTqXtJSULA&libraries=visualization" type="text/javascript"></script>
-        <script src="scripts/controllers.js"></script>
-        <script src="scripts/routing.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Business Landing Site for Hackathon" content="">
+    <meta name="Jonathan Hofler" content="">
+    <title>Business Landing</title>
 
-        <!-- <link rel="stylesheet" type="text/css" href="de-project.css"> -->
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTxRCsiV_T2JXVWBuQs6HEpiTqXtJSULA&libraries=visualization" type="text/javascript"></script>
+    <script src="scripts/controllers.js"></script>
+    <script src="scripts/routing.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
 
-    <body>
+<body>
     <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
-      <div class="container">
-        <div class="navbar-header">
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="" class="navbar-brand">Business Landing</a>
-        </div>
-        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Business <b class="caret"></b></a>
-              <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                  <li><a href="gt.html">Getting Started</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-submenu">
-                    <a tabindex="-1" href="">Hampton Roads</a>
-                    <ul class="dropdown-menu">
-                      <li><a tabindex="-1" href="#">Chesapeake</a></li>
-                      <li><a tabindex="-1" href="#">Hampton</a></li>
-                      <li><a tabindex="-1" href="#">Newport News</a></li>
-                      <li><a tabindex="-1" href="norfolk.html">Norfolk</a></li>
-                      <li><a tabindex="-1" href="#">Portsmouth</a></li>
-                      <li><a tabindex="-1" href="#">Suffolk</a></li>
-                      <li><a tabindex="-1" href="#">Virginia Beach</a></li>
-                     <!-- <li class="dropdown-submenu">
-                        <a href="#">Even More..</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">3rd level</a></li>
-                          <li><a href="#">3rd level</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Second level</a></li>
-                      <li><a href="#">Second level</a></li> -->
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="" class="navbar-brand">Business Landing</a>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Business <b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                            <li><a href="gt.html">Getting Started</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="">Hampton Roads</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">Chesapeake</a></li>
+                                    <li><a tabindex="-1" href="#">Hampton</a></li>
+                                    <li><a tabindex="-1" href="#">Newport News</a></li>
+                                    <li><a tabindex="-1" href="norfolk.html">Norfolk</a></li>
+                                    <li><a tabindex="-1" href="#">Portsmouth</a></li>
+                                    <li><a tabindex="-1" href="#">Suffolk</a></li>
+                                    <li><a tabindex="-1" href="#">Virginia Beach</a></li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#/about">About</a>
+                        </li>
+                        <li>
+                            <a href="#/contact">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#/feedback">Feedback</a>
+                        </li>
                     </ul>
-                      </ul>
-                  </li>
-            <li>
-              <a href="#/about">About</a>
-            </li>
-            <li>
-              <a href="#/contact">Contact</a>
-            </li>
-            <li>
-              <a href="#/feedback">Feedback</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+                </nav>
+            </div>
+        </header>
 
-    <div ng-app="business-landing" ng-view>
-    </div>
+        <div ng-app="business-landing" ng-view>
+        </div>
 
-  </body>
+    </body>
 </html>
