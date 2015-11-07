@@ -14,5 +14,7 @@ app.config(['$routeProvider', '$locationProvider',
         controller: 'DemographicsSelectionController'
     }).when('/getting-started', {
         templateUrl: 'templates/getting-started.html',
+    }).when('/about', {
+        templateUrl: 'templates/about.html',
     });
 }]);
