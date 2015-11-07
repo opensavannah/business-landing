@@ -18,5 +18,7 @@ app.config(['$routeProvider', '$locationProvider',
         templateUrl: 'templates/about.html'
     }).when('/contact', {
         templateUrl: 'templates/contact.html'
+    }).when('/feedback', {
+        templateUrl: 'templates/feedback.html'
     });
 }]);
