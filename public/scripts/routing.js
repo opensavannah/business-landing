@@ -13,8 +13,10 @@ app.config(['$routeProvider', '$locationProvider',
         templateUrl: 'templates/demographics-form.html',
         controller: 'DemographicsSelectionController'
     }).when('/getting-started', {
-        templateUrl: 'templates/getting-started.html',
+        templateUrl: 'templates/getting-started.html'
     }).when('/about', {
-        templateUrl: 'templates/about.html',
+        templateUrl: 'templates/about.html'
+    }).when('/contact', {
+        templateUrl: 'templates/contact.html'
     });
 }]);
