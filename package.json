@@ -4,6 +4,7 @@
   "description": "A web application that enables users to find the best location to start their business.",
   "main": "server.js",
   "dependencies": {
+    "bower": "^1.6.5",
     "cors": "^2.7.1",
     "express": "^4.13.3",
     "gulp": "^3.9.0",
